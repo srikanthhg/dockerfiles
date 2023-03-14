@@ -1,0 +1,25 @@
+sudo su
+sudo yum upate
+amazon-linux-extras install docker -y
+service docker start
+systemctl enable docker
+usermod -a -G docker ec2-user
+logout and login
+
+
+https://github.com/techworldwithsiva
+
+
+docker pull nginx
+docker images
+docker start image_id
+docker ps -a
+docker start container_id
+
+docker run -d -p 8000:80 nginx
+
+docker rm -f `docker ps -a -q`
+docker rmi `docker images -q`
+
+
+
