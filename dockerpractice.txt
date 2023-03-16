@@ -4,6 +4,7 @@ amazon-linux-extras install docker -y
 service docker start
 systemctl enable docker
 usermod -a -G docker ec2-user
+
 logout and login
 
 
@@ -21,5 +22,19 @@ docker run -d -p 8000:80 nginx
 docker rm -f `docker ps -a -q`
 docker rmi `docker images -q`
 
+FROM
+RUN
+CMD
+LABEL
+EXPOSE
+ENV
+COPY
+ADD
+ENTRYPOINT
+USER
+WORKDIR
+ARG
+ONBUILD
+STOPSIGNAL
 
 
